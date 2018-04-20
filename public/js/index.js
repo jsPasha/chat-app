@@ -12,3 +12,9 @@ socket.on('disconnect', function () {
 socket.on('newMessage', function(message) {
 	console.log(message)
 });
+
+socket.on('newUser', function(message) {
+	// $('#content').append('<p><b>'+message.from+'</b>'+message.text+'</p>');
+	console.log(message)
+});
+
